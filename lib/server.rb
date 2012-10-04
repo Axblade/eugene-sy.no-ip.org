@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/assetpack'
+require './lib/tags'
 
 module App
   class Server < Sinatra::Base
@@ -14,22 +15,25 @@ module App
 
     register Sinatra::AssetPack
 
+    include ::Tag
+
     assets do
       css_compression :sass
       js_compression :uglify
 
-      serve '/js', from: '/app/javascripts'
-      serve '/css', from: '/app/css'
-      serve '/images', from: '/app/images'
+      serve '/js', from: '/js'
+      serve '/css', from: '/css'
+      serve '/img', from: '/img'
     end
 
     get '/' do
+      @image ||= IMAGE_URL
       erb :index
     end
 
-    get '/*' do
-      redirect '/'
-    end
+    # get '/*' do
+    #   redirect '/'
+    # end
 
   end
 end

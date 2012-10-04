@@ -1,0 +1,50 @@
+body {
+	font: 13px Helvetica, arial, freesans, clean, sans-serif;
+	background: #aaa no-repeat 0 0;
+}
+
+div#bio {
+    width: 350px;
+    padding: 50px;
+	float: left;
+}
+
+#bio img {
+	margin-bottom: 5px;
+	border: 1px solid #999;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	-o-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+span.name {
+	font-size: 30px;
+	letter-spacing: -1px;
+	color: #495961;
+}
+
+span.nick {
+	display: inline-block;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 24px;
+	color: #666;
+	position: relative;
+	top: -2px;
+	margin-bottom: 12px;
+	vertical-align: top;
+	letter-spacing: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+div#links {
+	width: 50px;
+	padding: 50px 10px;
+	float: left;
+}
+

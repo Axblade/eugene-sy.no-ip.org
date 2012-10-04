@@ -1,1 +1,14 @@
-Hello, Sinatra!
+<div id='bio'>
+	<img src="<%= @image %>" alt='photo' />
+	<span class='name'>
+		Eugene Sypachev
+	</span>
+	<span class='nick'>
+		Axblade
+	</span>
+</div>
+<div id='links'>
+	<%= image_link 'https://github.com/Axblade', '/img/github.png', 'github' %>
+	<%= image_link 'http://coderwall.com/axblade', '/img/coderwall.png', 'coderwall' %>
+	<%= image_link 'https://twitter.com/Axblade', '/img/twitter.png', 'twitter' %>
+</div>
