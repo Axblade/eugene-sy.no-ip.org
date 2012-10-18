@@ -1,5 +1,5 @@
-worker_processes 4
-working_directory "/home/site/eugene_sy_no_ip_org"
+worker_processes 2
+working_directory "/home/site/eugene-sy.no-ip.org"
 listen 'unix:/tmp/basic.sock', :backlog => 512
 timeout 30
 pid "tmp/unicorn.pid"

@@ -5,17 +5,17 @@ body {
 
 div#bio {
     width: 350px;
-    padding: 50px;
+    padding: 50px 0px 0px 50px;
 	float: left;
 }
 
 #bio img {
 	margin-bottom: 5px;
 	border: 1px solid #999;
-	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); 
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	-o-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
-	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+	-o-box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); 
 }
 
 span.name {
