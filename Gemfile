@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'sinatra', '1.3.3'
+gem 'sinatra', '1.3.5'
 gem 'sinatra-assetpack'
 gem 'uglifier'
 gem 'sass'
 
-gem 'unicorn'
+gem 'thin'
