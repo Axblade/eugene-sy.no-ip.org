@@ -10,15 +10,15 @@ set :public_folder, Proc.new { File.join(root,"../public") }
 enable :static
 enable :sessions
 
-include ::Tag
+include ::Tags
 
 assets do
   css_compression :sass
   js_compression :uglify
 
-  serve '/js', from: '/js'
-  serve '/css', from: '/css'
-  serve '/img', from: '/img'
+  serve 'js', from: 'js'
+  serve '/css', from: 'css'
+  serve '/img', from: 'img'
 end
 
 get '/' do
