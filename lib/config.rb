@@ -1,8 +1,15 @@
 require 'digest/md5'
 require 'yaml'
 
-config = YAML.load_file("config/config.yaml")
-email_address = config["config"]["email"]
-hash = Digest::MD5.hexdigest(email_address)
-size = config["config"]["size"]
-IMAGE_URL = "http://www.gravatar.com/avatar/#{hash}?s=#{size}"
+module WebSite
+    
+  config = YAML.load_file("config/config.yaml")
+  IMAGE_HASH = Digest::MD5.hexdigest(config["config"]["email"])
+  IMAGE_SIZE = config["config"]["size"]
+  IMAGE_URL = "http://www.gravatar.com/avatar/#{IMAGE_HASH}?s=#{IMAGE_SIZE}" 
+
+  def self.img_url
+  	IMAGE_URL
+  end
+ 
+end
