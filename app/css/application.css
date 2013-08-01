@@ -49,6 +49,14 @@ div#links {
 }
 
 div#links img {
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+div#links img:hover {
+	border: 1px solid #999;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	-o-box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
