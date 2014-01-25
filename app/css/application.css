@@ -5,6 +5,11 @@ body {
 
 /* #### Mobile Phones #### */
 @media screen and (max-width: 480px) {
+  div#page {
+    width: 350px;
+    margin: 0 auto;
+  }
+
   div#bio {
     width: 100%;
     float: left;
