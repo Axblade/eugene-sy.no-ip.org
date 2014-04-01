@@ -6,13 +6,13 @@ GEM
     execjs (2.0.2)
     jsmin (1.0.1)
     json (1.8.1)
-    newrelic_rpm (3.7.2.195)
+    newrelic_rpm (3.7.3.204)
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
-    sass (3.2.14)
+    sass (3.3.4)
     sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -22,12 +22,12 @@ GEM
       rack-test
       sinatra
       tilt (>= 1.3.0, < 2.0)
-    thin (1.6.1)
+    thin (1.6.2)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
       rack (>= 1.0.0)
     tilt (1.4.1)
-    uglifier (2.4.0)
+    uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
 
