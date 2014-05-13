@@ -14,3 +14,9 @@
 	<%= image_link 'http://coderwall.com/axblade', '/img/coderwall.png', 'coderwall' %>
 	<%= image_link 'https://twitter.com/Axblade', '/img/twitter.png', 'twitter' %>
 </div>
+<% content_for :ga_code do %>
+	<script>
+		ga('create', <%= "'" + @code + "'" %>, 'eugene-sy.no-ip.org');
+    	ga('send', 'pageview');
+    </script>
+<% end %>
