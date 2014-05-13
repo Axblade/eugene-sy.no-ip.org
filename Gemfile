@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.1.2'
 
-gem 'sinatra', '1.4.4'
+gem 'sinatra', '1.4.5'
 gem 'sinatra-assetpack'
 gem 'uglifier'
 gem 'sass'
